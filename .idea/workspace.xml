@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aa97299-f140-4436-a801-548e601db734" name="Changes" comment=".gitignore 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/SpringBootDeveloperApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/testController.java" afterDir="false" />
+    <list default="true" id="3aa97299-f140-4436-a801-548e601db734" name="Changes" comment="스트링부트 테스트">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/springboot-developer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/MemberApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JUnitCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/itschool/springbootdeveloper/controller/MemberApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/testController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +67,63 @@
                 <item name="springboot-developer" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.hibernate.orm:hibernate-core:6.1.6.Final" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-jdbc:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-jdbc:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="com.zaxxer:HikariCP:5.0.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
                 <item name="org.springframework.boot:spring-boot-starter-web:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-json:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-tomcat:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter:3.0.2" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -67,28 +135,38 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "wookssss"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wookssss&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/wookssss/springboot-developer.git",
-    "accountId": "15a9dab8-662d-4ba8-8c45-dbd532591137"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wookssss/springboot-developer.git&quot;,
+    &quot;accountId&quot;: &quot;15a9dab8-662d-4ba8-8c45-dbd532591137&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.0.2/42ad589ec930e05a2ed702a4940955ff97b16a8c/spring-boot-autoconfigure-3.0.2.jar!/META-INF/spring.factories" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.0.2/42ad589ec930e05a2ed702a4940955ff97b16a8c/spring-boot-autoconfigure-3.0.2.jar!/org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.0.4/de18e3e75a0e56534d9df5978bd2f43f950e1b4a/spring-web-6.0.4.jar!/org/springframework/web/bind/annotation/RestController.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2mVPBLbXMZqJ53dRyPKq20Yv7Aq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -96,18 +174,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SpringBootDeveloperApplication.executor": "Run",
+    "Gradle.JUnitCycleTest.executor": "Run",
+    "Gradle.JUnitTest.executor": "Run",
+    "Gradle.MemberApiControllerTest.executor": "Run",
     "Gradle.springboot-developer [:Main.main()].executor": "Run",
     "Gradle.springboot-developer [:SpringBootDeveloperApplication.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/devweb/springboot/springboot-developer/src/main/java/com/itschool/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.itschool.springbootdeveloper.repository" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itschool.springbootdeveloper.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SpringBootDeveloperApplication">
     <configuration name="SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itschool.springbootdeveloper.SpringBootDeveloperApplication" />
       <module name="springboot-developer.main" />
@@ -121,8 +218,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JUnitCycleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;JUnitCycleTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;JUnitTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.itschool.springbootdeveloper.controller.MemberApiControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberApiControllerTest" />
+        <item itemvalue="Gradle.JUnitTest" />
+        <item itemvalue="Gradle.JUnitCycleTest" />
         <item itemvalue="Application.SpringBootDeveloperApplication" />
       </list>
     </recent_temporary>
@@ -144,11 +316,20 @@
       <option name="project" value="LOCAL" />
       <updated>1727161511033</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="스트링부트 테스트">
+      <option name="closed" value="true" />
+      <created>1727163153540</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727163153540</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".gitignore 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore 수정" />
+    <MESSAGE value="스트링부트 테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="스트링부트 테스트" />
   </component>
 </project>
