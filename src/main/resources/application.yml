@@ -15,6 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        ddl-auto: create
 
-    # 테이블 생성 후에 data.sql 실행
+    # 테이블 생성 후에 data.bak 실행
     defer-datasource-initialization: true
