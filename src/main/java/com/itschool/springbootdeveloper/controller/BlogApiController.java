@@ -40,8 +40,8 @@ public class BlogApiController {
         /*List<Article> articleList = blogService.findAll();
         List<ArticleResponse> articles = new ArrayList<>();
 
-        for(Article article : articleList) {
-            articles.add(new ArticleResponse(article));
+        for(Article article.html : articleList) {
+            articles.add(new ArticleResponse(article.html));
         }*/
         List<ArticleResponse> articles = blogService.findAll()
                                                     .stream()

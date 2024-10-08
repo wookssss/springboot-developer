@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping("/articles")
+@RequestMapping("/noapi/articles")
 public class BlogController {
     private  final BlogService blogService;
     private final ObjectMapper objectMapper = new ObjectMapper();
@@ -35,7 +35,7 @@ public class BlogController {
 
         // JSON 데이터를 담아서 반환
         ModelAndView mav = new ModelAndView("jsonView");
-        mav.addObject("article", savedArticle);
+        mav.addObject("article.html", savedArticle);
         mav.setStatus((HttpStatus.CREATED));
         System.out.println(addArticleRequest);
         return mav;
