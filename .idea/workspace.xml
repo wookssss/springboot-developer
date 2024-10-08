@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aa97299-f140-4436-a801-548e601db734" name="Changes" comment="블로그 글 삭제, 수정, 조회">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/BlogViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/ExampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/ArticleListViewResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/ArticleViewResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/newArticle.html" afterDir="false" />
+    <list default="true" id="3aa97299-f140-4436-a801-548e601db734" name="Changes" comment="2024-10-08 ~p.195 7장 블로그 화면 구성하기 커밋">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/UserApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/AddUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/service/UserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/SpringBootDeveloperApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/SpringBootDeveloperApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/domain/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/AddArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/AddArticleRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/UpdateArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/dto/UpdateArticleRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itschool/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,8 +138,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -383,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727741078509</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2024-10-08 ~p.195 7장 블로그 화면 구성하기 커밋">
+      <option name="closed" value="true" />
+      <created>1728347461253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728347461253</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -392,6 +395,7 @@
     <MESSAGE value="스트링부트 Test, SQL" />
     <MESSAGE value="2024-09-27 5장까지 (~ p.122)" />
     <MESSAGE value="블로그 글 삭제, 수정, 조회" />
-    <option name="LAST_COMMIT_MESSAGE" value="블로그 글 삭제, 수정, 조회" />
+    <MESSAGE value="2024-10-08 ~p.195 7장 블로그 화면 구성하기 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-10-08 ~p.195 7장 블로그 화면 구성하기 커밋" />
   </component>
 </project>
