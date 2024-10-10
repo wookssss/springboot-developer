@@ -1,6 +1,5 @@
 package com.itschool.springbootdeveloper.dto;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

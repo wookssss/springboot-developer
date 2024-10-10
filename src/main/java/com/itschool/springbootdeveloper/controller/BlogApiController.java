@@ -6,70 +6,64 @@ import com.itschool.springbootdeveloper.dto.ArticleResponse;
 import com.itschool.springbootdeveloper.dto.UpdateArticleRequest;
 import com.itschool.springbootdeveloper.service.BlogService;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.sql.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
-@RestController
+@RestController // HTTP Response Body에 객체 데이터를 JSON 형식으로 반환하는 컨트롤러
 @RequestMapping("/api/articles")
 public class BlogApiController {
+
     private final BlogService blogService;
 
-    @GetMapping("{id}")
-    public ResponseEntity<ArticleResponse> findArticles(@PathVariable Long id){
+    @GetMapping("{id}") // readAll
+    public ResponseEntity<ArticleResponse> findArticles(@PathVariable long id) {
         Article article = blogService.findById(id);
 
         return ResponseEntity.ok()
                 .body(new ArticleResponse(article));
     }
 
-    @GetMapping("")
-    public ResponseEntity<List<ArticleResponse>> findAllArticles(){
-        /*List<Article> articleList = blogService.findAll();
-        List<ArticleResponse> articles = new ArrayList<>();
-
-        for(Article article.html : articleList) {
-            articles.add(new ArticleResponse(article.html));
-        }*/
+    @GetMapping("") // readOne
+    public ResponseEntity<List<ArticleResponse>> findAllArticles() {
+        // 방식 2
         List<ArticleResponse> articles = blogService.findAll()
-                                                    .stream()
-                                                    .map(ArticleResponse :: new)
-                                                    .toList();
-        return ResponseEntity.ok().body(articles);
+                .stream()
+                .map(article -> new ArticleResponse(article)) // ClassName::instanceMethod 인스턴스 메서드 참조(클래스 이름), ArticleResponse::new
+                .toList();
+
+        return ResponseEntity.ok()
+                .body(articles);
     }
-    @PostMapping("")
-    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request){
+
+    // HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핑
+    @PostMapping("")// createOne
+    // @RequestBody로 요청 본문 값 매핑
+    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
         Article savedArticle = blogService.create(request);
 
         return ResponseEntity.status(HttpStatus.CREATED)
-                             .body(savedArticle);
+                .body(savedArticle);
     }
 
-    @DeleteMapping("{id}")
-    public ResponseEntity<Void> deleteArticle(@PathVariable Long id){
+    @PutMapping("{id}") // updateOne
+    public ResponseEntity<Article> updateArticle(@PathVariable Long id,
+                                                 @RequestBody UpdateArticleRequest request) {
+        Article updateArticle = blogService.update(id, request);
+
+        return ResponseEntity.ok()
+                .body(updateArticle);
+    }
+
+    @DeleteMapping("{id}") // deleteOne
+    public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
         blogService.delete(id);
 
         return ResponseEntity.ok()
                 .build();
-    }
-
-    @Transactional(rollbackFor = RuntimeException.class) // 트랜젝션 메소드
-    @PutMapping("{id}")
-    public ResponseEntity<Article> updateArticle(@PathVariable Long id, @RequestBody UpdateArticleRequest request){
-        Article updateArticle = blogService.update(id,request);
-
-        return ResponseEntity.ok().body(updateArticle);
     }
 }
